@@ -13,9 +13,6 @@ const cors= require("cors");
 app.use(express.json());
 app.use(cors());
 
-app.use("/",(req,res)=>{
-    res.send("Notes API");
-});
 
 app.use("/users",userRouter);// all the endpoints that starts with users will be in userRouter
 app.use("/note",noteRouter);
