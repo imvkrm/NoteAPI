@@ -2,7 +2,7 @@ const userModel = require("../models/user");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const { default: mongoose } = require("mongoose");
-const SECERT_KEY=process.env.SECERT_KEY;
+const SECERT_KEY="NOTE_API";
 
 const signup = async (req,res)=>{
 

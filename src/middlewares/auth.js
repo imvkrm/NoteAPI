@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-const SECERT_KEY=process.env.SECERT_KEY;
+const SECERT_KEY="NOTE_API";
 
 const auth = (req, res, next)=>{
     
