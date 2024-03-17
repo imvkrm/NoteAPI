@@ -21,7 +21,7 @@ app.use("/users",userRouter);// all the endpoints that starts with users will be
 app.use("/note",noteRouter);
 
 const PORT= process.env.PORT || 5010;
-mongoose.connect("mongodb+srv://admin_note:note24@cluster0.yffqulb.mongodb.net/notes_db?retryWrites=true&w=majority&appName=Cluster0")
+mongoose.connect(process.env.MONGO_URL)
 .then(()=>{
     app.listen(PORT,()=>{
         console.log("Server Started at port No. "+ PORT);
